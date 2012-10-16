@@ -1,42 +1,98 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
+<!DOCTYPE html> 
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready">
-                <p class="status pending blink">Connecting to Device</p>
-                <p class="status complete blink hide">Device is Ready</p>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Multi-page template</title> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+
+	
+<body> 
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+	<div data-role="header">
+		<h1>Tidepool</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<h2>Find people on Tidepool</h2>			
+		<p>Take a quick photo quiz and we will match you to people in the neighborhood.</p>	
+		<p><a href="#two" data-role="button">Photo Quiz</a></p>
+		<p><a href="#three" data-role="button">Match</a></p>	
+		<!-- <p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a></p> -->
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>Tidepool, Inc</h4>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" data-theme="a">
+
+	<div data-theme="a" data-role="header">
+        <h2>
+            Select best
+        </h2>
+    </div>
+    <div data-role="content">
+        <a href="#page1">
+            <div style=" text-align:center">
+                <a href="#three" data-role="button"><img style="width: 30%; height: 30%" src="http://media-cache-ec6.pinterest.com/upload/14707136254263624_saSmgbzX_c.jpg"></a>
             </div>
+        </a>
+        <div style=" text-align:center">
+            <a href="#three" data-role="button"><img style="width: 30%; height: 30%" src="http://media-cache-ec4.pinterest.com/upload/21040323229520380_q4dY53q4_c.jpg"></a>
         </div>
-        <script type="text/javascript" src="cordova-2.0.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+    </div>
+    
+</div><!-- /page two -->
+
+
+<!-- Start of third page: #three -->
+<div data-role="page" id="three" data-theme="a">
+
+	 <div data-theme="a" data-role="header">
+        <h3>
+            Matches
+        </h3>
+    </div>
+    <div data-role="content" style="text-align:center">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=San Francisco, CA&amp;zoom=14&amp;size=288x450&amp;markers=San Francisco, CA|||&amp;sensor=false"
+        width="288" height="250">
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            Tidepool
+        </h3>
+    </div>
+	
+</div><!-- /page three -->
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="popup">
+
+	<div data-role="header" data-theme="e">
+		<h1>Dialog</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<h2>Popup</h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
+		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to page "one"</a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+</body>
 </html>
