@@ -1,0 +1,14 @@
+#####
+Android Set Up
+
+Start Server:
+./adb start-server
+
+Run emulator:
+./tools/emulator -avd tidepool
+
+Install apk
+./adb install Merde-debug.apk
+
+
+

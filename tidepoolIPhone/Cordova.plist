@@ -24,6 +24,7 @@
 	<true/>
 	<key>ExternalHosts</key>
 	<array>
+		<string>localhost</string>
 		<string>media-cache-ec4.pinterest.com</string>
 		<string>maps.googleapis.com</string>
 		<string>media-cache-ec6.pinterest.com</string>
