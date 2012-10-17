@@ -3,7 +3,7 @@
 							
 			$.support.cors = true;
 		    $.mobile.allowCrossDomainPages = true;			    
-		    $.post("http://127.0.0.1:8080/tidepoolAPI/json/test.ajax", 
+		    $.post("http://10.0.2.2:8080/tidepoolAPI/json/test.ajax", 
 		    		{id:'ouch'}, 
 		    		function(item) {		    			
 		    			$("#test").html(item.id);
