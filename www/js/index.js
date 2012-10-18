@@ -16,7 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
+//var servicesAPI = "http://10.0.2.2:8080";
+var servicesAPI = "http://localhost:8080";
 var app = {
     initialize: function() {
         this.bind();

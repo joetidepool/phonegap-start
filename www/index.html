@@ -27,8 +27,8 @@
 	<div data-role="content" >	
 		<h2>Find people on Tidepool</h2>			
 		<p>Take a quick photo quiz and we will match you to people in the neighborhood. Status: <span id="test"></span></p>	
-		<p><a href="#two" data-role="button">Photo Quiz</a></p>
-		<p><a href="#three" data-role="button">Match</a></p>	
+		<p><a href="#two" id="assesment" data-role="button">Photo Quiz</a></p>
+		<p><a href="#three" id="match" data-role="button">Match</a></p>	
 		<!-- <p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a></p> -->
 	</div><!-- /content -->
 	
@@ -49,11 +49,11 @@
     <div data-role="content">
         <a href="#page1">
             <div style=" text-align:center">
-                <a href="#three" data-role="button"><img style="width: 30%; height: 30%" src="http://media-cache-ec6.pinterest.com/upload/14707136254263624_saSmgbzX_c.jpg"></a>
+                <a href="#three" data-role="button" id="testImage0Link"><img id="testImage0" style="width: 30%; height: 30%" src="http://media-cache-ec6.pinterest.com/upload/14707136254263624_saSmgbzX_c.jpg"></a>
             </div>
         </a>
         <div style=" text-align:center">
-            <a href="#three" data-role="button"><img style="width: 30%; height: 30%" src="http://media-cache-ec4.pinterest.com/upload/21040323229520380_q4dY53q4_c.jpg"></a>
+            <a href="#three" data-role="button" id="testImage1Link"><img id="testImage1" style="width: 30%; height: 30%" src="http://media-cache-ec4.pinterest.com/upload/21040323229520380_q4dY53q4_c.jpg"></a>
         </div>
     </div>
     
@@ -72,10 +72,15 @@
         <img src="https://maps.googleapis.com/maps/api/staticmap?center=San Francisco, CA&amp;zoom=14&amp;size=288x450&amp;markers=San Francisco, CA|||&amp;sensor=false"
         width="288" height="250">
     </div>
+    <a href="#one" data-role="button">Start Again</a>
+    <p>
+    	
+    </p>
     <div data-theme="a" data-role="footer" data-position="fixed">
         <h3>
-            <a href="#one">Tidepool</a>
+            Tidepool
         </h3>
+        
     </div>
 	
 </div><!-- /page three -->
